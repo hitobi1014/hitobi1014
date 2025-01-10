@@ -9,7 +9,7 @@
 # 🖥 Project
 |          Date           | Project Name                                                  | Description                                         |
 |:-----------------------:|---------------------------------------------------------------|-----------------------------------------------------|
-| 2024.11.01 ~ 진행중 | [Prog-BE](https://github.com/hitobi1014/Prog-BE)                   | Java -> Kotlin 마이그레이션 및 리팩토링                |
+| 2024.12.11 ~ 진행중 | [Healthy-Corgi](https://github.com/hitobi1014/healthy-corgi-be)     | 운동인증 웹앱 프로젝트 (코틀린)                |
 | 2024.04.08 ~ 2024.05.17 | [와플(What is your plan?)](https://github.com/What-s-Your-Plan) | 개인의 과거 기록과 미래의 약속을 공유하는 웹 서비스 (개인형 일정 대시보드)         |
 | 2024.02.19 ~ 2024.04.04 | [문득](https://github.com/hitobi1014/md8)                       | 산책 안에서 소소한 위로, 작은 행복, 긍정적 감정을 발견해 건강한 삶을 되찾기 위한 서비스 |
 | 2024.01.02 ~ 2024.02.16 | [Prog](https://github.com/hitobi1014/Prog)                    | 프로그래머가 되고싶은 사람들을 위한 프로젝트 모집 & 관리 서비스                |
@@ -24,8 +24,8 @@
 | ![JPA](https://img.shields.io/badge/JPA-6DB33F?style=for-the-badge&logo=jpa&logoColor=white)                                   |  70%   | - Spring JPA 및 Querydsl을 활용해 데이터 핸들링 <br> - ORM을 활용한 DB 설계                                                   |
 | ![SpringSecurity](https://img.shields.io/badge/Spring_Security-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=white) |  40%   | - 기본적인 인증 및 프로세스 이해                                                                                          |
 | ![Thymeleaf](https://img.shields.io/badge/Thymeleaf-%23005C0F.svg?style=for-the-badge&logo=Thymeleaf&logoColor=white)          |  40%   | - 태그 사용과 문서를 참고하여 프로젝트에 사용할 수 있음                                                                             |
+| ![Kotlin](https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white)                   |  50%   | - 코틀린 문법 이해와 소규모 프로젝트 진행 가능    |
 | ![NestJS](https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white)                   |  30%   | -                                                                                                        |
-| ![Kotlin](https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white)                   |  30%   | -                                                                                                        |
 
 
 ## Frontend
@@ -60,8 +60,8 @@
 ### 학습 진행중 
 |     Date     | Skill  | Link                                                                        | Description                                                                   |
 |:------------:|--------|-----------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-| 2024.10.29 ~ | Kotlin | [Kotlin 기초](https://github.com/mj-study/Kotlin/tree/main/basic)             | - Kotlin 문법과 구조 파악 <br> - 내용 정리                                               |
-| 2024.10.24 ~ | React  | [React 트위터 클론 코딩](https://github.com/mj-study/react-pjt/tree/main/twitter)  | - CRA 활용 <br> - SCSS 사용 <br> - FireStore을 활용한 알림 및 다양한 로직 설계 <br> - vercel 배포 |
+| 2024.10.29 ~ 2024.11.07| Kotlin | [Kotlin 기초](https://github.com/mj-study/Kotlin/tree/main/basic)             | - Kotlin 문법과 구조 파악 <br> - 내용 정리                                               |
+| 2024.10.24 ~ 2024.11.05| React  | [React 트위터 클론 코딩](https://github.com/mj-study/react-pjt/tree/main/twitter)  | - CRA 활용 <br> - SCSS 사용 <br> - FireStore을 활용한 알림 및 다양한 로직 설계 <br> - vercel 배포 |
 | 2024.05.19 ~ | Java   | [Effective Java](https://github.com/mj-study/Java/tree/main/Effective-Java) | Java 중급                                                                       |
 
 ### 학습 완료 
