@@ -9,7 +9,7 @@
 # 🖥 Project
 |          Date           | Project Name                                                  | Description                                         |
 |:-----------------------:|---------------------------------------------------------------|-----------------------------------------------------|
-| 2025.03.20 ~ 진행중 | [러너스하이](https://github.com/hitobi1014/runners-high)      | 러너를 위한 훈련관리 웹앱 서비스 (Kotlin & React)                |
+| 2025.03.20 ~ 진행중 | [러너스하이-BE](https://github.com/hitobi1014/runners-high) / [러너스하이-FE](https://github.com/hitobi1014/runners-high-fe)| 러너를 위한 훈련관리 웹앱 서비스 (Kotlin & React)                |
 | 2024.04.08 ~ 2024.05.17 | [와플(What is your plan?)](https://github.com/What-s-Your-Plan) | 개인의 과거 기록과 미래의 약속을 공유하는 웹 서비스 (개인형 일정 대시보드)         |
 | 2024.02.19 ~ 2024.04.04 | [문득](https://github.com/hitobi1014/md8)                       | 산책 안에서 소소한 위로, 작은 행복, 긍정적 감정을 발견해 건강한 삶을 되찾기 위한 서비스 |
 | 2024.01.02 ~ 2024.02.16 | [Prog](https://github.com/hitobi1014/Prog)                    | 프로그래머가 되고싶은 사람들을 위한 프로젝트 모집 & 관리 서비스                |
@@ -25,7 +25,6 @@
 | ![SpringSecurity](https://img.shields.io/badge/Spring_Security-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=white) |  40%   | - 기본적인 인증 및 프로세스 이해                                                                                          |
 | ![Thymeleaf](https://img.shields.io/badge/Thymeleaf-%23005C0F.svg?style=for-the-badge&logo=Thymeleaf&logoColor=white)          |  40%   | - 태그 사용과 문서를 참고하여 프로젝트에 사용할 수 있음                                                                             |
 | ![Kotlin](https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white)                   |  50%   | - 코틀린 문법 이해와 소규모 프로젝트 진행 가능    |
-| ![NestJS](https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white)                   |  30%   | -                                                                                                        |
 
 
 ## Frontend
@@ -34,7 +33,6 @@
 | ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) |  70%  | - ES문법에 대한 이해와 class 및 Optional Chaining 활용 가능 <br> - 적절한 자료구조 사용과 비동기 통신을 이해하고 서버와의 통신을 통해 데이터를 처리할 수 있음 <br> - 프로젝트에서 다양한 Javascript 기능을 사용하여 간단한 웹 애플리케이션 개발 가능</td> |
 | ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)     |  60%  | - 데이터 타입에 대한 이해와 인터페이스 설계 가능 <br> - 타입 단언 및 타입 가드를 기초적으로 활용 가능 <br> - 타입 안전성을 높이기 위한 Typescript의 기본 개념을 사용하여 프로젝트에서 타입 오류 방지 가능                                         |
 | ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)                |  60%  | - React 컴포넌트와 Hooks에 대한 이해 <br> - 라이브러리 관리, React Router 사용, Props에 대한 이해를 통해 간단한 프로젝트 구현 가능 <br> - 상태 관리와 컴포넌트 구조를 설계하여 SPA 구조 개발 가능                                   |
-| ![Vue.js](https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D)            |  50%  | - Vue 컴포넌트 개념에 대한 이해 <br> - Vue 가이드를 통해 기초적인 구조를 설계하고, 간단한 프로젝트에 적용 가능                                                                                                  |
 
 ## DevOps
 | Skill                                                                                                                | Level | Description |
