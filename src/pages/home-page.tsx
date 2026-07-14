@@ -1,3 +1,4 @@
+import { CareerSection } from '@/components/career-section'
 import { EducationSection } from '@/components/education-section'
 import { ProjectSection } from '@/components/project-section'
 import { SiteHeader } from '@/components/site-header'
@@ -9,8 +10,9 @@ export function HomePage() {
     <div className="min-h-screen">
       <SiteHeader />
       <main className="mx-auto flex max-w-4xl flex-col gap-14 px-6 py-16">
-        <EducationSection />
+        <CareerSection />
         <ProjectSection />
+        <EducationSection />
         <TechStackSection />
         <StudySection />
       </main>

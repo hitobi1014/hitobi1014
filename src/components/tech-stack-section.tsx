@@ -25,13 +25,13 @@ export function TechStackSection() {
                 <div key={skill.name} className="space-y-1.5">
                   <div className="flex items-center justify-between">
                     <span className="text-sm font-medium">{skill.name}</span>
-                    <span className="text-xs text-muted-foreground">
+                    <span className="text-xs">
                       {skill.level}%
                     </span>
                   </div>
-                  <Progress value={skill.level} />
+                  <Progress value={skill.level} className="bg-white"/>
                   {skill.description && (
-                    <p className="text-xs text-muted-foreground">
+                    <p className="text-xs">
                       {skill.description}
                     </p>
                   )}
