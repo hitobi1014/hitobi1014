@@ -13,7 +13,7 @@ import { projects } from '@/data/portfolio'
 export function ProjectSection() {
   return (
     <section>
-      <SectionHeading icon={<IconFolderCode size={22} />} title="Project" />
+      <SectionHeading icon={<IconFolderCode size={22} />} title="Project (사이드 프로젝트)" />
       <div className="grid gap-4 sm:grid-cols-2">
         {projects.map((project) => (
           <Card key={project.name} >

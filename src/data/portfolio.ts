@@ -30,7 +30,7 @@ export const projects: ProjectItem[] = [
   {
     period: '2026.04.13 ~ 진행중',
     name: '오케스트라 티켓 시스템',
-    description: '아마추어 오케스트라 팀들을 위한 티켓 배정 시스템',
+    description: '60~70명 규모의 아마추어 오케스트라 동호회가 연 1회 공연 때마다 엑셀로 수기 관리하던 \'회원별 티켓 수 배분 → 좌석 배정\' 과정을 웹 시스템으로 대체한 내부 관리 툴',
     links: [
       { label: 'BE', url: 'https://github.com/hitobi1014/g-ticketing-be' },
       { label: 'FE', url: 'https://github.com/hitobi1014/g-ticketing-fe' },
@@ -40,7 +40,7 @@ export const projects: ProjectItem[] = [
     period: '2024.04.08 ~ 2024.05.17',
     name: '와플 (What is your plan?)',
     description:
-      '개인의 과거 기록과 미래의 약속을 공유하는 웹 서비스 (개인형 일정 대시보드)',
+      '[SSAFY 진행] - 개인의 과거 기록과 미래의 약속을 공유하는 웹 서비스 (개인형 일정 대시보드)',
     links: [
       { label: 'GitHub', url: 'https://github.com/What-s-Your-Plan' },
     ],
@@ -49,13 +49,13 @@ export const projects: ProjectItem[] = [
     period: '2024.02.19 ~ 2024.04.04',
     name: '문득',
     description:
-      '산책 안에서 소소한 위로, 작은 행복, 긍정적 감정을 발견해 건강한 삶을 되찾기 위한 서비스',
+      '[SSAFY 진행] - 산책 안에서 소소한 위로, 작은 행복, 긍정적 감정을 발견해 건강한 삶을 되찾기 위한 서비스',
     links: [{ label: 'GitHub', url: 'https://github.com/hitobi1014/md8' }],
   },
   {
     period: '2024.01.02 ~ 2024.02.16',
     name: 'Prog',
-    description: '프로그래머가 되고싶은 사람들을 위한 프로젝트 모집 & 관리 서비스',
+    description: '[SSAFY 진행] - 프로그래머가 되고싶은 사람들을 위한 프로젝트 모집 & 관리 서비스',
     links: [{ label: 'GitHub', url: 'https://github.com/hitobi1014/Prog' }],
   },
 ]

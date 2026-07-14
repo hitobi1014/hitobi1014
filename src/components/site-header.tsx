@@ -1,21 +1,19 @@
-import { IconBrandGithub, IconMail } from '@tabler/icons-react'
+import {IconBrandGithub} from '@tabler/icons-react'
 
-import { Button } from '@/components/ui/button'
+import {Button} from '@/components/ui/button'
 
 export function SiteHeader() {
   return (
     <header className="border-b from-primary/5 to-transparent">
       <div className="mx-auto flex max-w-4xl flex-col items-start gap-4 px-6 py-16">
-        <p className="text-sm font-medium">Welcome!</p>
         <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
-          hitobi1014
+          최민준
         </h1>
         <div className="max-w-xl space-y-3">
           <p>
             보험·금융권 시스템 운영 및 개발 경험을 바탕으로 안정적이고
             견고한 시스템을 구축하는 백엔드 개발자입니다. Java와 Spring 기반
-            DevOn Framework를 활용한 시스템 개발·운영, Oracle 성능 최적화
-            경험을 보유하고 있습니다.
+            DevOn Framework를 활용한 시스템 개발·운영 경험을 보유하고 있습니다.
           </p>
           <p>
             오래되었거나 불편한 것을 그냥 지나치지 못하는 성향 덕분에,
@@ -40,12 +38,6 @@ export function SiteHeader() {
             >
               <IconBrandGithub />
               GitHub
-            </a>
-          </Button>
-          <Button variant="outline" asChild>
-            <a href="mailto:hitobi1014@gmail.com">
-              <IconMail />
-              Contact
             </a>
           </Button>
         </div>
