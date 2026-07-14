@@ -18,7 +18,7 @@ function CareerRoleItem({ role }: { role: CareerRole }) {
         <div className="flex items-center justify-between gap-2">
           {role.name && <span className="text-sm font-medium">{role.name}</span>}
           {role.period && (
-            <Badge variant="secondary" className="font-mono font-normal">
+            <Badge variant="secondary" className="font-mono font-normal bg-surface-accent">
               {role.period}
             </Badge>
           )}
