@@ -1,8 +1,21 @@
-import {IconBrandGithub} from '@tabler/icons-react'
+import { useState } from 'react'
+import { IconBrandGithub, IconCheck, IconMail } from '@tabler/icons-react'
 
-import {Button} from '@/components/ui/button'
+import { Button } from '@/components/ui/button'
 
 export function SiteHeader() {
+  const [copied, setCopied] = useState(false)
+  const email = 'dailymaro@naver.com'
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(email)
+      setCopied(true)
+      setTimeout(() => setCopied(false), 1500)
+    } catch {
+      // clipboard access unavailable (e.g. no permission, insecure context)
+    }
+  }
+
   return (
     <header className="border-b from-primary/5 to-transparent">
       <div className="mx-auto flex max-w-4xl flex-col items-start gap-4 px-6 py-16">
@@ -39,6 +52,10 @@ export function SiteHeader() {
               <IconBrandGithub />
               GitHub
             </a>
+          </Button>
+          <Button onClick={handleCopy} className="cursor-pointer">
+            {copied ? <IconCheck /> : <IconMail />}
+            {copied ? '복사됨' : email}
           </Button>
         </div>
       </div>
