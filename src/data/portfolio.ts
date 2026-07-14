@@ -9,6 +9,14 @@ export const education: EducationItem[] = [
     period: '2024.04',
     title: '삼성청년SW아카데미 특화 프로젝트 우수상 (2위)',
   },
+  {
+    period: '2018.10 ~ 2022.02',
+    title: '정보통신공학 학사 (학점은행제)'
+  },
+  {
+    period: '2013.03 ~ 2017.03',
+    title: '한국폴리텍 IV 대전캠퍼스 기계시스템과'
+  },
 ]
 
 export interface ProjectItem {
