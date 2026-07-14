@@ -20,7 +20,7 @@ export function ProjectSection() {
             <CardHeader>
               <CardTitle className="flex items-center justify-between gap-2 ">
                 <span>{project.name}</span>
-                <Badge variant="secondary" className="font-mono font-normal">
+                <Badge variant="secondary" className="font-mono font-normal bg-surface-accent">
                   {project.period}
                 </Badge>
               </CardTitle>
@@ -36,7 +36,7 @@ export function ProjectSection() {
                     href={link.url}
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline"
+                    className="inline-flex items-center gap-1 text-sm font-medium text-content-secondary hover:underline"
                   >
                     {link.label}
                     <IconExternalLink size={14} />

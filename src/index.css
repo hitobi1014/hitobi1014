@@ -3,10 +3,12 @@
 
 @theme {
   --font-sans: "Pretendard Variable", Pretendard, -apple-system, system-ui, sans-serif;
-  --color-surface-primary: var(--color-mist-100);
-  --color-surface-secondary: var(--color-mist-500);
+  --color-surface-primary: var(--color-teal-950);
+  --color-surface-secondary: var(--color-teal-500);
+  --color-surface-accent: var(--color-teal-100);
 
-  --color-content-primary: var(--color-mist-100);
+  --color-content-primary: var(--color-teal-100);
+  --color-content-secondary: var(--color-teal-300);
 }
 
 body {

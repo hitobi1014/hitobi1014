@@ -20,12 +20,12 @@ export interface ProjectItem {
 
 export const projects: ProjectItem[] = [
   {
-    period: '2025.03.20 ~ 진행중',
-    name: '러너스하이',
-    description: '러너를 위한 훈련관리 웹앱 서비스 (Kotlin & React)',
+    period: '2026.04.13 ~ 진행중',
+    name: '오케스트라 티켓 시스템',
+    description: '아마추어 오케스트라 팀들을 위한 티켓 배정 시스템',
     links: [
-      { label: 'BE', url: 'https://github.com/hitobi1014/runners-high' },
-      { label: 'FE', url: 'https://github.com/hitobi1014/runners-high-fe' },
+      { label: 'BE', url: 'https://github.com/hitobi1014/g-ticketing-be' },
+      { label: 'FE', url: 'https://github.com/hitobi1014/g-ticketing-fe' },
     ],
   },
   {
@@ -204,5 +204,173 @@ export const study: StudyItem[] = [
     skill: 'Java',
     description: 'Effective Java - Java 중급',
     link: 'https://github.com/mj-study/Java/tree/main/Effective-Java',
+  },
+]
+
+export interface CareerBullet {
+  text: string
+  subItems?: string[]
+}
+
+export interface CareerRole {
+  name?: string
+  period?: string
+  bullets: CareerBullet[]
+}
+
+export interface CareerItem {
+  company: string
+  employment?: string
+  period: string
+  projectName?: string
+  purpose?: string
+  rolesLabel: string
+  roles: CareerRole[]
+  achievements?: string[]
+  techStack: string[]
+}
+
+export const careers: CareerItem[] = [
+  {
+    company: '흥국화재 화면전환 프로젝트',
+    employment: '프리랜서',
+    period: '2025.09.01 ~ 2026.08.21',
+    purpose:
+      'UI 프레임워크 교체 (as-is: x-flatform → to-be: exBuilder6, 둘 다 WYSIWYG 기반)',
+    rolesLabel: '주요 업무',
+    roles: [
+      {
+        name: 'UI 프레임워크 전환 작업',
+        bullets: [
+          {
+            text: '디자인 표준에 맞춰 화면 UI 컴포넌트 변환 및 전환 후 스크립트 정상 동작 검증',
+          },
+          {
+            text: '전환 작업 범위 내에서 자발적으로 레거시 코드 리팩토링 진행',
+            subItems: [
+              'var 선언을 사용 목적에 맞게 let/const로 정리해 호이스팅 및 변수 중복 문제 제거',
+              '불필요한 함수 제거, 하나의 함수에 과도하게 집중된 로직을 기능 단위로 분리',
+            ],
+          },
+        ],
+      },
+      {
+        name: '비동기 처리 흐름 결함 해결',
+        bullets: [
+          {
+            text: '이벤트 핸들러 내부에서 Promise를 반환하는 비동기 함수를 호출하는 구조였으나, 핸들러 자체가 비동기 컨텍스트로 제어되지 않아 await 이후 로직이 선행 실행되는 구조적 문제 발견',
+          },
+          {
+            text: '원인 분석 후 비동기 로직을 별도 함수로 분리해 명시적으로 호출하는 구조로 개선, 불필요한 Promise 래핑 제거로 코드 복잡도 감소',
+          },
+        ],
+      },
+      {
+        name: '비동기 흐름 디버깅 (엑셀 다운로드 데이터 정합성 이슈)',
+        bullets: [
+          {
+            text: '공통 엑셀 다운로드 기능 수행 후 데이터셋을 초기화하는 로직에서 엑셀 파일이 빈 파일로 생성되는 버그 발생',
+          },
+          {
+            text: '3단계 비동기 체인(loadExcelLib → exportExcel → Worker postMessage → onmessage resolve) 추적을 통해 공통 함수 내부 return 누락으로 Promise 체인이 끊겨 await이 조기 통과되는 원인 특정',
+          },
+          {
+            text: '공통 함수에 return 추가로 비동기 흐름이 순서대로 완료된 후 초기화(clear())가 실행되도록 수정',
+          },
+        ],
+      },
+    ],
+    achievements: [
+      '비동기 처리 흐름 문제 두 건을 구조적 원인부터 분석해 해결하며, Promise 반환 여부를 기준으로 비동기 흐름을 점검하는 디버깅 기준 수립',
+      '공통 함수 개선을 통해 동일 패턴을 사용하는 다른 기능에서 발생할 수 있는 잠재적 버그 예방',
+      'UI 프레임워크 전환 작업 범위를 벗어나지 않는 선에서 자발적으로 레거시 코드 리팩토링을 수행해 코드 가독성과 유지보수성 개선에 기여',
+    ],
+    techStack: ['JavaScript', 'exBuilder6', 'x-flatform'],
+  },
+  {
+    company: 'MG손해보험',
+    employment: '프리랜서',
+    period: '2024.12.02 ~ 2025.08.31',
+    projectName: 'IFRS17 결산 시스템 운영',
+    rolesLabel: '주요 업무',
+    roles: [
+      {
+        bullets: [
+          {
+            text: 'IFRS17 결산 시스템 배치 프로그램 운영 및 장애 대응',
+            subItems: [
+              'J-JOBS, Control-M 배치 스케줄러 운영 및 모니터링',
+              'ARK 시스템 운영 및 소스 포팅',
+            ],
+          },
+          {
+            text: 'Oracle 데이터베이스 성능 최적화',
+            subItems: [
+              '파티션 테이블 설계 및 관리',
+              'SQL 쿼리 튜닝을 통한 시스템 성능 향상 (튜닝 전/후 Cost: 365,019 → 125,378, 약 30% 개선)',
+              '테이블스페이스 관리 및 데이터 백업/이관 작업',
+            ],
+          },
+          {
+            text: 'Java를 활용한 업무 효율화 도구 개발',
+            subItems: [
+              '테이블 백업 SQL 자동 생성 프로그램 구현',
+              'JFrame을 활용한 GUI 인터페이스 개발',
+            ],
+          },
+        ],
+      },
+    ],
+    achievements: [
+      'IFRS17 결산 배치 프로세스 안정화로 월별 결산 시간 20% 단축 및 오류율 감소. Oracle 데이터베이스 튜닝을 통해 주요 쿼리 성능 30% 이상 개선.',
+    ],
+    techStack: ['Java', 'DevOn Framework', 'Oracle', 'J-JOBS', 'Control-M'],
+  },
+  {
+    company: '(주)오에이에스와이에스',
+    period: '2021.02.01 ~ 2023.04.28',
+    rolesLabel: '주요 프로젝트',
+    roles: [
+      {
+        name: '흥국화재/신한라이프 KICS 프로젝트',
+        period: '2022.12 ~ 2023.04',
+        bullets: [
+          { text: 'Spring Framework 기반 백엔드 API 개발' },
+          { text: '보고서 조회 및 코드 관리 화면 개발' },
+          { text: 'KICS 관련 데이터 매핑 및 테이블 관리' },
+        ],
+      },
+      {
+        name: 'IBK 저축은행 정보계 고도화 프로젝트',
+        period: '2022.01 ~ 2022.05',
+        bullets: [
+          { text: 'Spring Framework 기반 백엔드 API 개발' },
+          { text: 'exBuilder6 프레임워크를 활용한 화면 개발' },
+          {
+            text: 'Scouter APM 모니터링 도구 도입 (장애 대응 시간 단축, 실시간 병목 파악 체계 구축)',
+          },
+        ],
+      },
+      {
+        name: '신한카드 마이데이터 프로젝트',
+        period: '2021.04 ~ 2022.01',
+        bullets: [
+          { text: 'DevOn Framework 기반 API 개발' },
+          { text: '업권별 수집 API 개발' },
+          { text: '토큰 갱신 배치 운용 (Job-Pass)' },
+          { text: '사용자 인증을 위한 토큰 검증' },
+        ],
+      },
+    ],
+    techStack: [
+      'Java',
+      'Spring Framework',
+      'DevOn Framework',
+      'Oracle',
+      'PostgreSQL',
+      'JavaScript',
+      'exBuilder6',
+      'Web Square',
+    ],
   },
 ]

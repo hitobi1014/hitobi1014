@@ -15,7 +15,7 @@ export function EducationSection() {
               key={item.title}
               className="flex flex-col gap-1 sm:flex-row sm:items-center sm:gap-4"
             >
-              <span className="shrink-0 text-sm font-mono text-muted-foreground">
+              <span className="shrink-0 text-sm font-mono">
                 {item.period}
               </span>
               <span className="text-sm">{item.title}</span>

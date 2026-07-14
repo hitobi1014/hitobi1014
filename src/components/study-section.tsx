@@ -8,12 +8,12 @@ export function StudySection() {
   return (
     <section>
       <SectionHeading icon={<IconBook2 size={22} />} title="Study" />
-      <div className="divide-y rounded-xl border">
+      <div className="divide-y rounded-xl border bg-surface-primary text-content-primary">
         {study.map((item) => (
           <div key={`${item.skill}-${item.period}`} className="p-4">
             <div className="flex flex-wrap items-center gap-2">
-              <Badge variant="outline">{item.skill}</Badge>
-              <span className="font-mono text-xs text-muted-foreground">
+              <Badge variant="outline" className="text-content-primary">{item.skill}</Badge>
+              <span className="font-mono text-xs">
                 {item.period}
               </span>
               {item.link && (
@@ -21,14 +21,14 @@ export function StudySection() {
                   href={item.link}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-1 text-xs font-medium text-primary hover:underline"
+                  className="inline-flex items-center gap-1 text-xs font-medium text-content-secondary hover:underline"
                 >
                   링크
                   <IconExternalLink size={12} />
                 </a>
               )}
             </div>
-            <p className="mt-2 text-sm text-muted-foreground">
+            <p className="mt-2 text-sm">
               {item.description}
             </p>
           </div>
