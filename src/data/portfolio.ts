@@ -32,8 +32,7 @@ export const projects: ProjectItem[] = [
     name: '오케스트라 티켓 시스템',
     description: '60~70명 규모의 아마추어 오케스트라 동호회가 연 1회 공연 때마다 엑셀로 수기 관리하던 \'회원별 티켓 수 배분 → 좌석 배정\' 과정을 웹 시스템으로 대체한 내부 관리 툴',
     links: [
-      { label: 'BE', url: 'https://github.com/hitobi1014/g-ticketing-be' },
-      { label: 'FE', url: 'https://github.com/hitobi1014/g-ticketing-fe' },
+      { label: 'FE', url: 'https://github.com/hitobi1014/ticket-system-fe' },
     ],
   },
   {
